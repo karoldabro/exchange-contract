@@ -1,18 +1,18 @@
 <?php
 
-namespace Kdabrow\CryptoWorkerContract\Exchange\DataObjects;
+namespace Kdabrow\ExchangeContract\DataObjects;
 
 use Carbon\CarbonInterface;
-use Kdabrow\CryptoWorkerContract\Exchange\Enums\OrderSide;
-use Kdabrow\CryptoWorkerContract\Exchange\Enums\OrderType;
+use Kdabrow\ExchangeContract\Enums\Side;
+use Kdabrow\ExchangeContract\Enums\Type;
 
 class OrderType
 {
     public function __construct(
-        public readonly OrderType $type,
-        public readonly OrderSide $side,
+        public readonly Type $type,
+        public readonly Side $side,
         public readonly string $id,
-        public readonly string $pair,
+        public readonly string $symbol,
         public readonly float $price,
         public readonly CarbonInterface $dateTime,
         public readonly ?float $quantity,

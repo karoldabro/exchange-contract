@@ -1,0 +1,17 @@
+{
+    "name": "kdabrow/exchange-contract",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "illuminate/collections": "^8.0",
+        "nesbot/carbon": "^2.55"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kdabrow\\ExchangeContract\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
